@@ -9,7 +9,7 @@ export default function useList(defaultList = []) {
     setList(newList);
   };
 
-  const push = () => {
+  const push = (item) => {
     setList((list) => [...list, item]);
   };
 
@@ -31,9 +31,9 @@ export default function useList(defaultList = []) {
 
   const updateAt = (idx, ele) => {
     setList((list) => {
-      let newList = [...list]
-      newList[idx] = ele
-      return newList
+      let newList = [...list];
+      newList[idx] = ele;
+      return newList;
     }
   };
 
