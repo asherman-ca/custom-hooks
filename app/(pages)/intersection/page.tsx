@@ -17,8 +17,6 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   const [ref, entry] = useIntersectionObserver();
 
-  console.log(entry);
-
   return (
     <Container>
       <InterComponent ref={ref}></InterComponent>
